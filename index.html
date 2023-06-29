@@ -30,7 +30,7 @@
           >
           <ul class="header-list">
             <li class="list-menu">
-              <a class="link-menu" href="./index.html">Studio</a>
+              <a class="link-menu active" href="./index.html">Studio</a>
             </li>
             <li class="list-menu">
               <a class="link-menu" href="./portfolio.html">Portfolio</a>
@@ -62,7 +62,9 @@
         <div class="head-bg-color">
           <div class="container">
             <h1 class="head-text">Effective Solutions for Your Business</h1>
-            <button class="main-btn" type="button">Order Service</button>
+            <button class="main-btn" type="button" data-modal-open>
+              Order Service
+            </button>
           </div>
         </div>
       </section>
@@ -306,38 +308,38 @@
       <!-- Customers -->
       <section class="section container">
         <h2 class="customers-header">Customers</h2>
-        <div class="customers">
-          <div class="customers-container">
+        <ul class="customers">
+          <li class="customers-container">
             <svg width="104" height="56">
               <use href="/images/icons.svg.svg#Logo"></use>
             </svg>
-          </div>
-          <div class="customers-container">
+          </li>
+          <li class="customers-container">
             <svg width="104" height="56">
               <use href="/images/icons.svg.svg#Logo-1"></use>
             </svg>
-          </div>
-          <div class="customers-container">
+          </li>
+          <li class="customers-container">
             <svg width="104" height="56">
               <use href="/images/icons.svg.svg#Logo-2"></use>
             </svg>
-          </div>
-          <div class="customers-container">
+          </li>
+          <li class="customers-container">
             <svg width="104" height="56">
               <use href="/images/icons.svg.svg#Logo-3"></use>
             </svg>
-          </div>
-          <div class="customers-container">
+          </li>
+          <li class="customers-container">
             <svg class="customers-icon" width="104" height="56">
               <use href="/images/icons.svg.svg#Logo-4"></use>
             </svg>
-          </div>
-          <div class="customers-container">
+          </li>
+          <li class="customers-container">
             <svg width="104" height="56">
               <use href="/images/icons.svg.svg#Logo-5"></use>
             </svg>
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
     </main>
     <!-- footer -->
@@ -355,31 +357,50 @@
           </div>
           <div>
             <h3 class="footer-social-text">Social media</h3>
-            <div class="social-footer">
-              <a href="" class="social-icon footer-icon">
-                <svg class="" width="16" height="16">
-                  <use href="/images/icons.svg.svg#instagram"></use>
-                </svg>
-              </a>
-              <a href="" class="social-icon footer-icon">
-                <svg class="" width="16" height="16">
-                  <use href="/images/icons.svg.svg#twitter"></use>
-                </svg>
-              </a>
-              <a href="" class="social-icon footer-icon">
-                <svg class="" width="16" height="16">
-                  <use href="/images/icons.svg.svg#facebook"></use>
-                </svg>
-              </a>
-              <a href="" class="social-icon footer-icon">
-                <svg class="" width="16" height="16">
-                  <use href="/images/icons.svg.svg#linkedin"></use>
-                </svg>
-              </a>
-            </div>
+            <ul class="social-footer">
+              <li>
+                <a href="" class="social-icon footer-icon">
+                  <svg class="" width="16" height="16">
+                    <use href="/images/icons.svg.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="" class="social-icon footer-icon">
+                  <svg class="" width="16" height="16">
+                    <use href="/images/icons.svg.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="" class="social-icon footer-icon">
+                  <svg class="" width="16" height="16">
+                    <use href="/images/icons.svg.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="" class="social-icon footer-icon">
+                  <svg class="" width="16" height="16">
+                    <use href="/images/icons.svg.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </footer>
+    <!-- modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="modal-icon" width="8" height="8">
+            <use href="/images/icons.svg.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="/js/modal.js"></script>
   </body>
 </html>
