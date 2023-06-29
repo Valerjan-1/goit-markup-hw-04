@@ -173,7 +173,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(./images/people-office.jpg);
+    url(/images/people-office.jpg);
   width: 1440px;
   height: 600px;
   background-position: center;
