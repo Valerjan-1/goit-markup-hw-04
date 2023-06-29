@@ -60,6 +60,8 @@ button {
   padding-top: 29px;
   padding-bottom: 29px;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container {
   display: flex;
@@ -81,6 +83,7 @@ button {
   gap: 40px;
 }
 .link-logo {
+  position: relative;
   color: var(--color-logo-link);
   margin-right: 76px;
   font-family: "Raleway", sans-serif;
@@ -120,8 +123,13 @@ button {
   border-radius: 2px;
   position: absolute;
   top: 50px;
+  bottom: -1px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.active-color {
+  color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-menu {
   padding: 24px 0;
@@ -135,6 +143,7 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .list-contacts:hover,
 .list-contacts:focus {
